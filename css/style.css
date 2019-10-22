@@ -42,6 +42,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Special Elite', 'Lato', cursive, sans-serif;
+  
 }
 
 
@@ -95,8 +96,9 @@
 .header {
     height: 160vh;
     background: linear-gradient( rgba(32, 164, 243, 0.2), rgba(0, 0, 0, 0.9) ), url(../images/maxdefault.jpg) no-repeat center center/cover fixed;
-    
+   
 }
+
 
 .side-view {
     display: flex;
@@ -108,7 +110,7 @@
 .side-view li {
     font-size: 2rem;
     height: 7rem;
-    padding-right: 6rem;
+    padding-right: 10rem;
     color: white;
 }
 
@@ -124,6 +126,7 @@
 .fa-play-circle {
     color: white;
     font-size: 2rem;
+
 }
 
     /* Video Player JS */
@@ -140,6 +143,7 @@
     .play-btn .fa-play-circle {
         margin-left: 1px;
         font-size: 2.5rem;
+
     }
 
     .play-btn .fa-play-circle:hover {
@@ -226,7 +230,7 @@
 
 /* Grid Placement of Texts */
 .explicitly-placed ul {
-    font-size: 15rem;
+    font-size: 13rem;
     list-style: none;
     display: grid;
     grid-template-columns: repeat(4,1fr);   
@@ -342,20 +346,40 @@
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    background: linear-gradient( rgba(32, 164, 243, 0.2), rgba(0, 0, 0, 1) ), url(../images/thewell.jpeg) no-repeat center center/cover fixed;
+    background: url(/images/noise.jpg);
+    animation: noise .5s steps(10) infinite;
+    /* background: linear-gradient( rgba(32, 164, 243, 0.2), rgba(0, 0, 0, 1) ), url(../images/thewell.jpeg) no-repeat center center/cover fixed; */
     padding: 3rem 0;
     font-family: 'Special Elite';
 }
 
+
+
 .footer-sub {
-    color: white;
+    color: black;
     font-size: 3rem;
 }
 
 .footer-main {
-    font-size: 7rem;
+    font-size: 8rem;
     color: var(--main-color);
 }
+
+@keyframes noise 
+{
+    0%
+    {
+        background-position: 0 0;
+    }
+    100%
+    {
+        background-position: 100% 100%;
+    }
+}
+
+
+
+
 
 
 /* 

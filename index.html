@@ -12,7 +12,9 @@
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/15fe940eca.js" crossorigin="anonymous"></script>
     
-    
+    <!-- Text On Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Rings Halloween</title>
 
     <!-- Magnific Popup core CSS file -->
@@ -81,12 +83,16 @@
 
 <!-- Main Header -->
     <header class="header">
+        
             <div class="banner-header">
                 <h1 class="banner-heading">Rings</h1>
 
-                <h2 class="sub-heading">Watch the film
+                
+
+                <h2 class="sub-heading" data-aos="fade-in">Watch the film
                 <a class="videostory" href="https://www.youtube.com/embed/qkVlC2WgEwc"><i class="far fa-play-circle"></i></a>
                 </h2>
+                
             </div>
 
             <ul class="side-view">
@@ -103,13 +109,13 @@
 <!-- Explicitly Placed Text Section -->
     <section class="explicitly-placed">
         <ul class="grid-container">
-            <li>First</li>
-            <li>You</li>
-            <li>Watch</li>
-            <li>It.</li>
-            <li>Then</li>
-            <li>You</li>
-            <li>Die.</li>
+            <li data-aos="fade-in">First</li>
+            <li data-aos="fade-right">You</li>
+            <li data-aos="fade-left">Watch</li>
+            <li data-aos="fade-in">It.</li>
+            <li data-aos="fade-left">Then</li>
+            <li data-aos="fade-right">You</li>
+            <li data-aos="fade-in">Die.</li>
         </ul>
     </section>
 
@@ -143,5 +149,14 @@
 <!-- Magnific Popup core JS file -->
 <script src="magnific-popup/jquery.magnific-popup.js"></script>
     
+<!-- Scroll Animation -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+      offset: 500,
+      duration: 2000
+  });
+</script>
+
 </body>
 </html>
